@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ng-app="D3jsApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<title>Document</title>
+
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.min.js"></script>
+	<script type="text/javascript" src="javascripts/app.js"></script>
+	<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body ng-controller="D3jsController">
+	<ul>
+		<li ng-repeat="phone in phones">
+			<span>{{phone.name}}</span>
+			<p>{{phone.snippet}}</p>
+		</li>
+	</ul>
+</body>
+</html>
